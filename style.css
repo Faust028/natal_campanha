@@ -1,0 +1,135 @@
+*{margin:0;
+ padding: 0;}
+html, body{
+    height: 100%;
+    margin: 0;   /* remove margens padrão que quebram o layout */
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+}
+header{
+    background-color: #023e7c;
+    color: rgb(255, 255, 255);
+    display: flex;                /* ATIVA O FLEX */
+    justify-content: space-between; /* UM FICA À ESQUERDA E O OUTRO À DIREITA */
+    align-items: center;          /* ALINHA VERTICALMENTE */
+    padding: 10px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+.titulo-header{
+    max-width: 30%;
+    padding: 10px;
+    
+}
+
+.subtitulo-header{
+    margin-right: 30px;            /* tira o espaçamento desnecessário */
+}
+
+a:-webkit-any-link {
+    color: white;
+    text-decoration: none;
+    
+}
+
+main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+      flex-direction: column;
+    background-color: rgb(255, 255, 255);
+    margin-top: 120px;
+    border-radius: 5px;
+    flex: 1;
+}
+
+form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+      flex-direction: column;
+    background-color: #eaeced;
+    margin-top: 20px; 
+    width: 300px;
+    padding: 30px;
+    border-radius: 10px;
+}
+ label{
+    margin-top: 15px;
+    color: rgb(70, 70, 70);
+ }
+input{
+    border-radius: 10px;
+    border-width: 0px;
+    padding: 2px;
+    width: 90%;
+    
+}
+ button{
+    margin-top: 20px;
+    border-radius: 100px;
+    border-width: 0px;
+    padding: 10px;
+    color: white;
+    background-color: #023e7c;
+    width: 100%;
+ }
+
+ footer{
+    background-color: #023e7c;
+    color: #fff;
+    text-align: center;
+
+    padding: 20px 0;
+    margin-top: 40px;
+
+    width: 100%;
+}
+
+.botao-agencia{
+    font-size: small;
+    display: flex;
+    margin-top: 20px;
+}
+
+input[type="checkbox" i] {
+    background-color: initial;
+    cursor: default;
+    appearance: auto;
+    box-sizing: border-box;
+    width: 20px;
+    padding: 2 px;
+    border: initial;
+    border: 0px;
+}
+
+.botao-doacao{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 75%;;
+}
+
+.imagem{
+    width: 75%;
+    display: flex;
+      justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+}
+.imagem-main{
+    width: 100%;
+}
+
+p{
+    font-size: large;
+}
+
+select{
+    width: 80%;
+}

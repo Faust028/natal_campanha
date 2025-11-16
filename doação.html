@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Escolher ONG</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" href="./imagens/brb-logo-0.png">
+</head>
+<body>
+
+<header>
+    <div class="titulo-header">
+        <h1 class="campanha">PNB</h1>  
+    
+        <h3>Campanha de Natal</h3>
+    </div>
+    <h3 class="subtitulo-header"><a  href="">Consultar Doação</a></h3>
+    
+</header>
+
+<main>
+    <h2>Escolha a ONG e a quantidade de cestas</h2>
+
+    <form action="confirmacao.html" method="GET">
+        <label>Selecionar ONG</label>
+        <select name="ong" required>
+            <option value="">Escolha uma ONG</option>
+            <option>ONG Esperança</option>
+            <option>Instituto Amor</option>
+            <option>Casa da Solidariedade</option>
+        </select>
+
+        <label>Quantidade de cestas</label>
+        <select name="quantidade" required>
+            <option value="1">1 cesta</option>
+            <option value="2">2 cestas</option>
+            <option value="3">3 cestas</option>
+            <option value="5">5 cestas</option>
+            <option value="10">10 cestas</option>
+        </select>
+
+        <label>Forma de entrega</label>
+        <select name="entrega" required>
+            <option>Eu mesmo(a) irei entregar</option>
+            <option>Irei deixar no Instituto BRB</option>
+        </select>
+
+        <button onclick="window.location.href='confirmação.html'" type="submit">Confirmar Doação</button>
+    </form>
+</main>
+
+<footer>
+    <p>BRB Banco de Brasília</p>
+</footer>
+
+</body>
+</html>
